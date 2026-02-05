@@ -1,0 +1,160 @@
+/* ================================
+   GLOBAL THEME – TEXTCRAFT
+   ================================ */
+
+:root {
+  --brand: #00e5ff;
+  --brand-dark: #00c4dd;
+
+  --bg-light: #f8fafc;
+  --bg-dark: #0b1220;
+
+  --text-main: #334155;
+  --text-heading: #0f172a;
+  --text-muted: #64748b;
+
+  --border-soft: #e2e8f0;
+}
+
+/* ================================
+   BASE RESET
+   ================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-main);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  padding-top: 70px; /* fixed navbar fix */
+}
+
+/* ================================
+   HEADINGS
+   ================================ */
+
+h1, h2, h3, h4 {
+  color: var(--text-heading);
+  font-weight: 700;
+}
+
+/* ================================
+   NAVBAR
+   ================================ */
+
+.navbar {
+  background: linear-gradient(90deg, #0b1220, #111827) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.navbar-brand {
+  color: var(--brand) !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #e5e7eb !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--brand) !important;
+}
+
+.btn-outline-info {
+  color: var(--brand);
+  border-color: var(--brand);
+}
+
+.btn-outline-info:hover {
+  background-color: var(--brand);
+  color: var(--bg-dark);
+}
+
+/* ================================
+   MAIN COMPONENTS
+   ================================ */
+
+.container {
+  max-width: 1100px;
+}
+
+textarea.form-control {
+  border-radius: 12px;
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  transition: 0.2s ease;
+}
+
+textarea.form-control:focus {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px rgba(0,229,255,0.2);
+}
+
+/* ================================
+   BUTTONS
+   ================================ */
+
+.btn-primary {
+  background-color: var(--brand);
+  color: var(--bg-dark);
+  border: none;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: var(--brand-dark);
+}
+
+.btn-danger {
+  background-color: #ef4444;
+  border: none;
+}
+
+.btn-success {
+  background-color: #22c55e;
+  border: none;
+}
+
+.btn-warning {
+  background-color: #facc15;
+  color: var(--bg-dark);
+  border: none;
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+  background: linear-gradient(135deg, #0b1220, #111827);
+  color: #cbd5f5;
+  margin-top: 80px;
+}
+
+footer h4 {
+  color: var(--brand);
+}
+
+footer a {
+  color: #cbd5f5;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--brand);
+}
+
+/* ================================
+   UTILITIES
+   ================================ */
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
