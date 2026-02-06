@@ -8,6 +8,7 @@ export default function TextForm(props) {
         setText("You have cliked on handle");
         let newText = text.toUpperCase();
         setText(newText);
+        props.showAlert('Converted to Uppercase','success')
     };
 
     const hanlelowClick = () => {
@@ -15,6 +16,7 @@ export default function TextForm(props) {
         setText("You have cliked on handle");
         let newText = text.toLowerCase();
         setText(newText);
+        props.showAlert('Converted to Lowercase','success')
     };
 
     const handleonChange = (event) => {
@@ -24,16 +26,20 @@ export default function TextForm(props) {
 
     const handleClear = () => {
         setText("");
+        props.showAlert('Clear All text','danger')
     };
 
     const handleCopy = () => {
         navigator.clipboard.writeText(text);
-        alert("Text copied to clipboard");
+        // alert("Text copied to clipboard");
+        props.showAlert('Text Coppied','success')
+
     };
 
     const handleExtraSpaces = () => {
         let newText = text.split(/\s+/).join(" ");
         setText(newText);
+        props.showAlert('Removed Extra spacess','success')
     };
 
     const maxChars = 200;
@@ -46,7 +52,7 @@ export default function TextForm(props) {
     // setText('Enter the text 2');  this is the wright way
     return (
         <>
-            <div className="container my-3">
+            <div className="container my-0">
                 <h1>{props.heading}</h1>
                 <p>{text.length}/{maxChars} characters</p>
 

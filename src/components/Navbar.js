@@ -1,13 +1,15 @@
 import React from "react";
- 
 
-export default function Navbar() {
+export default function Navbar({ mode, toggleMode }) {
   return (
     <nav
       className="navbar navbar-expand-lg fixed-top"
       style={{
         backdropFilter: "blur(12px)",
-        background: "rgba(0, 0, 0, 0.6)",
+        background:
+          mode === "dark"
+            ? "rgba(0, 0, 0, 0.7)"
+            : "rgba(255, 255, 255, 0.8)",
         borderBottom: "1px solid rgba(255,255,255,0.1)",
       }}
     >
@@ -23,40 +25,18 @@ export default function Navbar() {
           ⚡ TextCraft
         </span>
 
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#fancyNavbar"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div className="collapse navbar-collapse" id="fancyNavbar">
+        <div className="collapse navbar-collapse">
           <ul className="navbar-nav ms-auto align-items-center">
-            <li className="nav-item mx-2">
-              <a className="nav-link text-light fw-semibold" href="#">
-                Analyzer
-              </a>
-            </li>
 
             <li className="nav-item mx-2">
-              <a className="nav-link text-light fw-semibold" href="#">
-                Features
-              </a>
-            </li>
-
-            <li className="nav-item mx-2">
-              <a className="nav-link text-light fw-semibold" href="#">
-                About
-              </a>
-            </li>
-
-            <li className="nav-item mx-2">
-              <button className="btn btn-outline-info btn-sm px-3">
-                Dark Mode
+              <button
+                onClick={toggleMode}
+                className="btn btn-outline-info btn-sm px-3"
+              >
+                {mode === "dark" ? "☀ Light Mode" : "🌙 Dark Mode"}
               </button>
             </li>
+
           </ul>
         </div>
       </div>
