@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TEXTCRAFT/static/css/main.09dda1aa.css",
+    "main.js": "/TEXTCRAFT/static/js/main.58f02472.js",
+    "static/js/453.0547c99f.chunk.js": "/TEXTCRAFT/static/js/453.0547c99f.chunk.js",
+    "index.html": "/TEXTCRAFT/index.html",
+    "main.09dda1aa.css.map": "/TEXTCRAFT/static/css/main.09dda1aa.css.map",
+    "main.58f02472.js.map": "/TEXTCRAFT/static/js/main.58f02472.js.map",
+    "453.0547c99f.chunk.js.map": "/TEXTCRAFT/static/js/453.0547c99f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09dda1aa.css",
+    "static/js/main.58f02472.js"
+  ]
+}
