@@ -1,4 +1,5 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 
 export default function Navbar({ mode, toggleMode }) {
   return (
@@ -14,20 +15,46 @@ export default function Navbar({ mode, toggleMode }) {
       }}
     >
       <div className="container-fluid">
-        <span
+        {/* Brand */}
+        <a
+          href="/"
           className="navbar-brand fw-bold"
           style={{
             color: "#00e5ff",
             letterSpacing: "1px",
             fontSize: "1.3rem",
+            textDecoration: "none",
           }}
         >
           ⚡ TextCraft
-        </span>
+        </a>
 
-        <div className="collapse navbar-collapse">
+        <div className="collapse navbar-collapse show">
           <ul className="navbar-nav ms-auto align-items-center">
 
+            {/* Home */}
+            <li className="nav-item mx-2">
+              <a
+                href="/"
+                className="nav-link fw-semibold"
+                style={{ color: mode === "dark" ? "white" : "black" }}
+              >
+                Home
+              </a>
+            </li>
+
+            {/* About */}
+            <li className="nav-item mx-2">
+              <a
+                href="/about"
+                className="nav-link fw-semibold"
+                style={{ color: mode === "dark" ? "white" : "black" }}
+              >
+                About
+              </a>
+            </li>
+
+            {/* Dark / Light toggle */}
             <li className="nav-item mx-2">
               <button
                 onClick={toggleMode}
