@@ -26,9 +26,9 @@ export default function Footer() {
           <div className="col-md-4 mb-3">
             <h6 className="text-uppercase">Quick Links</h6>
             <ul className="list-unstyled">
-              <li><a href="#" className="text-light text-decoration-none">Home</a></li>
-              <li><a href="#" className="text-light text-decoration-none">Features</a></li>
-              <li><a href="#" className="text-light text-decoration-none">About</a></li>
+              <li><a href="#/home" className="text-light text-decoration-none">Home</a></li>
+              <li><a href="#/features" className="text-light text-decoration-none">Features</a></li>
+              <li><a href="#/about" className="text-light text-decoration-none">About</a></li>
             </ul>
           </div>
 
