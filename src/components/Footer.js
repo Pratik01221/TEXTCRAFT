@@ -35,9 +35,9 @@ export default function Footer() {
           {/* Social */}
           <div className="col-md-4 mb-3">
             <h6 className="text-uppercase">Connect</h6>
-            <a href="#" className="btn btn-outline-info btn-sm me-2">GitHub</a>
-            <a href="#" className="btn btn-outline-info btn-sm me-2">LinkedIn</a>
-            <a href="#" className="btn btn-outline-info btn-sm">Twitter</a>
+            <a href="https://github.com/pratik12345" className="btn btn-outline-info btn-sm me-2">GitHub</a>
+            <a href="https://www.linkedin.com/in/pratikgarad1221/" className="btn btn-outline-info btn-sm me-2">LinkedIn</a>
+            <a href="https://twitter.com/pratikgarad1221" className="btn btn-outline-info btn-sm">Twitter</a>
           </div>
 
         </div>
